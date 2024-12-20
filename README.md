@@ -11,6 +11,7 @@ When used in conjunction with the [Frame Vision API mobile app](https://github.c
 * Add dependencies for this project: `pip install fastapi uvicorn pillow`
 * Start the server, listening on all network interfaces: `uvicorn main:app --reload --host 0.0.0.0`
 * Run the [Frame Vision API mobile app](https://github.com/CitizenOneX/frame_vision_api) and test your vision/AI pipeline live with your API results (or exceptions!) printed in front of your eyes
+* Or test in your browser using the FastAPI /docs web interface, if you prefer
 * Hack away at `main.py` to perform your own vision/AI tasks
 
 ## Debugging in VSCode
