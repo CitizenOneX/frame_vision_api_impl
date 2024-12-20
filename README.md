@@ -15,11 +15,16 @@ When used in conjunction with the [Frame Vision API mobile app](https://github.c
 
 ## Debugging in VSCode
 The included `launch.json` has a configuration that should allow you to run `main.py` within VSCode and add breakpoints and step through your code when your API is being called. 
+
 In order for VSCode to be able to run the `uvicorn` server that serves up your API code, your Python terminal in VSCode needs to have activated the `.venv/` Python environment for the project (otherwise it won't be able to find uvicorn etc.)
 
 ## Network interfaces
 By default, `uvicorn` serves up your API on the `localhost` or `127.0.0.1` network interface, which is fine if the program calling your API is also running on the same computer.
+
 If you plan to use the Frame Vision API mobile app to call your API with every photo it takes, then your API needs to be running at an address that the mobile app can reach. 
+
 If your mobile phone is on the same network as your computer, then running uvicorn with `--host 0.0.0.0` should be enough to make the API visible to devices on your own network. (You might need to make sure your system's firewall allows it, if you have trouble connecting.)
+
 If your mobile phone is not on the same network, it might be necessary to make the API internet-facing, so approach this (port-forwarding etc.) with the usual caution.
-Alternatively, if you deploy your API to some cloud service, its endpoint should be accessible from any internet-connected mobile phone - but be aware there is no authentication/authorization built into this very simple example intended for prototying your vision/AI pipeline.
+
+Alternatively, if you deploy your API to some cloud service, its endpoint should be accessible from any internet-connected mobile phone - but be aware there is no authentication/authorization built into this very simple example, intended for prototying your vision/AI pipeline.
