@@ -6,6 +6,7 @@ When used in conjunction with the [Frame Vision API mobile app](https://github.c
 
 ## Example Usage
 * Clone this repository locally: `git clone https://github.com/CitizenOneX/frame_vision_api_impl`
+* Jump into the new directory: `cd frame_vision_api_impl`
 * Create a Python virtual environment to keep dependencies local: `python -m venv .venv`
 * Add dependencies for this project: `pip install fastapi uvicorn pillow`
 * Start the server, listening on all network interfaces: `uvicorn main:app --reload --host 0.0.0.0`
