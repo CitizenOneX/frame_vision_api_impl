@@ -8,7 +8,8 @@ When used in conjunction with the [Frame Vision API mobile app](https://github.c
 * Clone this repository locally into `my_api` directory (change the name to suit yourself): `git clone https://github.com/CitizenOneX/frame_vision_api_impl my_api`
 * Jump into the new directory: `cd my_api`
 * Create a Python virtual environment to help isolate package dependencies: `python -m venv .venv`
-* Add dependencies for this project: `pip install fastapi uvicorn pillow`
+* Activate that environment (Linux/Mac: `$ source myvenv/bin/activate`, Windows: `.venv\Scripts\activate.bat`)
+* Add dependencies for this project: `pip install fastapi uvicorn pillow python-multipart`
 * Start the server, listening on all network interfaces: `uvicorn main:app --reload --host 0.0.0.0`
 * Run the [Frame Vision API mobile app](https://github.com/CitizenOneX/frame_vision_api) and test your vision/AI pipeline live with your API results (or exceptions!) printed in front of your eyes
 * Or test in your browser using the FastAPI /docs web interface, if you prefer
